@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p {
+            text-indent: 1.0em;
+        }
+        
+    </style>
+<body>
+
+<h3>JavaScript</h3>
+
+    <p>JavaScript is one of the 3 languages all developes must learn, along with HTML, and CSS. HTML defines the content of webpages, 
+    CSS styles it, while JavaScript is used to program the behaviour of webpages. Outside of websites, JavaScript is occasionally used for 
+    desktop, server, and database apps. 
+    </p>
+
+<h3>The Script Tag</h3>
+
+    <p>In HTML, all code must be inserted between the opening <code>&#60script&#62</code> and closing <code>&#60/script&#62</code> tags.</p>
+
+<h3>JavaScript Functions and Events</h3>
+
+        <p>A JavaScript function is a block of JavaScript code, that can be executed when "called" for. For example, a script could be called
+            for by clicking a button.
+        </p>
+
+<h3>JavaScript in <code>&#60head&#62</code>, <code>&#60body&#62</code>, or External</h3>
+
+    <h4>JavaScript in <code>&#60head&#62</code>.</h4>
+
+        <p>Javascript can be placed inside of the <code>&#60head&#62</code> section of a HTML page</p>
+
+        <pre><code>
+        &#60;!DOCTYPE HTML&#62;
+        &#60;head&#62;
+        &#60;script&#62;
+        function ,myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        &#60;/script&#62;
+        &#60;/head&#62;
+        &#60;body&#62;</code></pre>
+
+    <h4>JavaScript in <code>&#60body&#62</code></h4>
+        
+        <p>Javascript can be placed inside the <code>&#60body&#62</code> section of a HTML page. Placing scripts at the bottom of a
+            body element improves display speed, because it script compilations slows down the display. Placing script at the bottom of the body
+            also makes neater code.
+        </p>
+
+        <h4>External JavaScript</h4>
+            <p>Javascript can be placed in external files. This is pratical when the same code is needed in many different web pages. 
+                Other advantages of external JavaScript sheets include:
+            </p>
+
+            <ul>
+                <li>Seperating HTML and code, making it easier to read and maintain</li>
+                <li>Cached JavaScript files can speed up page loads</li>
+
+            </ul>
+                
+            <p>JavaScript uses <code>.js</code> as its file extension.</p>
+
+            <p>To use an external script, put the name of the script file in the src (source) attribute of a <code>&#60script&#62</code> tag.</p>
+
+            <p><code>&#60script src="myScript.js"&#62&#60/script&#62</code></p>
+
+            <p><code>&#60script src="https://www.w3schools.com/js/myScript1.js"&#62&#60/script&#62</code></p>
+
+            <p>Do not wrap external Javascript in a <code>&#60script&#62</code> tag. This is already done in the HTML tag. Javascripts in 
+            external JavaScripts are seperated by semicolons (;). </p>
+
+
+       
+
+
+
+
+
+
+
+</body>
+</html>

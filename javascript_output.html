@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p {
+            text-indent: 1.0em;
+        }
+        
+    </style>
+
+<body>
+
+<h3>JavaScript Display Possibilities</h3> 
+    
+<p>JavaScript can display data in different ways:</p>
+
+<ul>
+    <li>Writing into a HTML element, using innerHTML</li>
+    <li>Writing into the HTML output usinf the document.write()</li>
+    <li>Writing into an alert box, using window.alert()</li>
+    <li>Writing into the browser consile, using console.log()</li>
+</ul>
+
+<h3>Using <code>innerHTML</code></h3>
+
+    <p>To access a HTML element, JavaScript can use the <code>document.getElementById(id)</code> method.</p>
+
+    <p>The <code>id</code> attribute defines which HTML element to modify with JavaScript. The <code>innerHTML</code> property defines 
+    how the HTML inside the element will be modified.</p>
+
+    <p id="ex.1">Click the button below to see an example of Javascript changing the content of a HTML element. Clicking the button
+        will change the text in this paragraph to sum of 7+4. Below the button is the code to run this simple program. </p>
+
+        <button type="button" onclick='document.getElementById("ex.1").innerHTML = 7+4'>Click Me!
+
+            </button>
+
+    <pre><code>
+            &#60;!DOCTYPE HTML&#62;
+            &#60;head&#62;
+            &#60;script&#62;
+            function ,myFunction() {
+                document.getElementById("ex.1").innerHTML = 5+6;
+            }
+            &#60;/script&#62;
+            &#60;/head&#62;
+            &#60;body&#62;
+
+            &#60;p id="ex.1"&#62;Click the button below to see an example of Javascript changing the content of a HTML element. Clicking the button
+            will change the text in this paragraph to sum of 7+4. Below the button is the code to run this simple program. &#60;/p&#62;
+            
+            &#60;/body&#62;
+            &#60;/html&#62;</code></pre>
+
+<h3>Using <code>document.write()</code></h3>
+
+    <p>For testing purposes, it is often convient to use <code>document.write():</code> Using document.write after a HTML document is 
+    fully loaded will delete all existing HTML. This is demonstrated in the Iframe below. Iframes are websites inside of websites. 
+    Everything inside the red border below is actually a seperate website.</p>
+
+    <iframe src="document.write.html" style="border:4px solid red;height:30%; width:50%;"></iframe>
+
+    <pre><code>
+            &#60;!DOCTYPE HTML&#62;
+            &#60;html&#62;
+            &#60;body&#62;
+
+            &#60;p id="ex.1"&#62;Click the button below to see an example of Javascript changing the content of a HTML element. Clicking the button
+            will change the text in this paragraph to sum of 7+4. Below the button is the code to run this simple program. &#60;/p&#62;
+
+            &#60;script&#62;
+            function ,myFunction() {
+                document.getElementById("ex.1").innerHTML = 5+6;
+            }
+            &#60;/script&#62;
+            
+            &#60;/body&#62;
+            &#60;/html&#62;</code></pre>
+
+<h3>Using <code>window.alert()</code></h3>
+
+    <p>Use the <code>window.alert</code> to display data in an alert box. Click the button below to see the sum of 7+4.
+    Below the button is JavaScript code for the button</p>
+
+    <button type= "button" onclick='window.alert(7+4)';>Click Me!!</button>
+
+    <pre><code>
+        &#60;!DOCTYPE HTML&#62;
+        &#60;html&#62;
+        &#60;body&#62;
+
+        &#60;p&#62;Use the &#60;code&#62;window.alert&#60;/code&#62; to display data in an alert box. Click the button below to see sum of 7+4.
+        Below the button is JavaScript code for the button&#60;/p&#62;
+
+        &#60;button type = "button" onclick='window.alert(7+4)';&#62;Click Me!!&#60;/button&#62;
+
+        &#60;/body&#62;
+        &#60;/html&#62;
+    
+    </code></pre>
+
+
+<h3>Using <code>console.log()</code></h3>
+
+    <p><code>console.log</code> is used for debugging. Follow this link to our debugging section to learn more about 
+    <code>console.log</code></p>
+
+    <code>&#60;script&#62;console.log(7+4);&#60;/script&#62;</code>
+
+
+
+
+            
+
+   

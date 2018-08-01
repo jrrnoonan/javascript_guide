@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p {
+            text-indent: 2.0em;
+        }
+    </style>
+<body>
+
+<h2><code>document.getElementById()</code></h2>
+
+    <p>One of the many JavaScript HTML methods is <code>getElementById()</code>. It allows you to select a HTML element by its id, 
+        and use JavaScript to modify it.
+     </p>
+
+<h3>Changing the text within a HTML Element</h3> 
+
+     <p id="textchange">When the button below is clicked, Javascript will change the content of this paragraph. Notice the <code>.innerHTML</code>
+      in the code below, it refers to all text inside of the HTML tag with the id demo.</p>
+
+     <button type="button" onclick='document.getElementById("texthange").innerHTML = "Clicking the button changed the paragraph!"'>Click Me!
+
+     </button>
+
+
+     
+<h3>Click me to Display Date and Time.</h3>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to Display Date and Time.
+    </button>
+
+    <p id="demo">When the button is clicked this text will be replaced by the current date and time. 
+     Notice the <code>.innerHTML</code>. This is referring to the text inside of the tag with the
+     id demo.</p>
+    </p>
+
+<h3>Using JavaScript to change HTML attributes values.</h3>
+
+    <p>JavaScript can change HTML attribute values.Remember that attributes provide additional information about HTML elements.</p>
+
+    <p>Notice the picture of the lightbulb below, along with the two buttons. Clicking the button gives the illusion that the light is 
+      turning on and off, when in reality two different pictures are being swapped out. This is achived by changing the src (source) 
+      of an img (image) tag.
+    </p>
+
+    <button onclick="document.getElementById('lightbulb').src='pic_bulbon.gif'">Turn on Light</button>
+
+    <img id="lightbulb" src="pic_bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('lightbulb').src='pic_bulboff.gif'">Turn off Light</button>
+
+<h3>Using JavaScript to Change HTML Attribute Values</h3>
+
+    <p id="change-css">Click the button below to change the font value of this sentence to 35px.</p>
+
+    <button type="button" onclick="document.getElementById('change-css').style.fontSize='35px'">Click Me!</button>
+
+<h3>Using JavaScript to hide or show hidden HTML Elements</h3>
+
+    <p id="hide">Use the buttons below to make this sentence appear or disappear</p>
+
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">Hide the above sentence</button>
+
+    <button type="button" onclick="document.getElementById('hide').style.display='block'">Show the above sentence</button>
+    
+
+
+
+</body
+</html>
