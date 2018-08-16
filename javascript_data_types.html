@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>JavaScript Data Types</h3>    
+
+    <p>In order to operate on variables, JavsScript neesds to know the type of data its working with. JavaScript variables 
+        hold many types of data, including numbers, strings, and objects. These different variables are known as data types (many programming
+        languages use data types). Without data types, a computer can't accurately solve this:
+    </p>
+
+    <p><code>var x = 16 + "Tuesday";</code></p>
+
+    <p>Usually, we don't add numbers to text(strings), so how does JavaScript handle this? Push the buton below to find out.</p>
+
+    <button onclick= "window.alert(16 +'Tuesday')">Click me</button>
+
+    <p id="demo">As displayed in the alert box, JavaScript treats numbers as strings when they are added to strings</p>
+
+    <p>JavaScript evaluates expressions from right to left. Different sequences can produce different results: For example: <br  />
+        <code>var x = 16 + 4 + "Chicken";</code> will compute <code>20Chicken</code>. <br  />
+        <code>var x = "Lettuce" + 16 + 4</code> will compute <code>Lettuce164</code>
+    </p>
+
+    <p>These above statements are treated differently because of the order of strings and numbers. JavaScript treats all numbers as numbers
+        until it reaches a string. At that point, the sum of all previous numbers is treated as a string, and all proceeding numbers are 
+        treated as strings.
+    </p>
+
+<h3>JavaScript Types are Dynamic</h3>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p {
+            text-indent: 1.0em;
+        }
+
+        .code{text-indent:0.em;}
+
+        table, th, td{
+            border: 1px solid black;
+            text-align: left;
+
+        }
+        
+    </style>
+
+<body>
+<h3>JavaScript Programs & Statements</h3>
+        <p>A computer program is a list of "instructions" for a computer to follow. Programming language calls
+        these instructions statements. 
+        </p>
+
+        <p>Statements in JavaScript are composed of:</p>
+         <ul>
+            <li>Values</li>
+                <dd>????</dd>
+            <li>Operators</li>
+                <dd>???</dd>
+            <li>Expressions</li>
+                <dd>???</dd>
+            <li>Keywords</li>
+                <dd>JavaScript statements often start with a keyword to identify the JavaScript action to
+                    be performed. Examples include function(declares a function) and break(terminates a switch or loop)
+                </dd>
+            <li>Comments</li>
+                <dd>??</dd>
+        </ul>
+
+        <p>JavaScript programs usually contain multiple statements. The statements are executed one by one
+        in the order they are written. JavaScript programs and statemts are often called JavaScript code.</p>
+
+    <h4>Semicolons <code>;</code></h5>
+
+        <p>Semicolons seperate JavaScript statements. In the example below, the variables a, b, and c are both
+        declared and assigned values. Notice how the variables a and b are declared on the same line, while 
+        c is declared on its own line. This is to show that its not spacing that seperates JavaScript statements 
+        but a semicolon (;). The statements are to be spaced at your own discretion based on neatness and 
+        readability. A good practice is to put spaces around operators, and avoid code lines longer than 80
+        characters. If a JavaScript statement requires a line break, its best broken after an operator.
+        </p>
+
+        <p class="code">
+            <code>
+                var a, b, c,;   //Declare 3 variables <br  />
+                a = 5; b = 6; //Assign values to a and b<br  />
+                c = a + b; //Assign the sum of a and b to c
+            </code>
+        </p>
+
+    <h4>JavaScript Code Blocks</h4>
+        <p>JavaScript statements can be grouped together in code blocks, inside curly brackets {}. The purpose of
+            this is to define statements to be executed together. You will often find code blocks in JavaScript 
+            functions.
+        </p>
+
+    
+        <p class="code">
+        <code>function myFunction () {<br  />
+                  document.getElementById("demo1").innerHTML =<br  />
+              "Hello Dolly!";<br  />
+                  document.getElementByID("demo2").innerHTML =<br  />
+                  "How are you?";<br  />
+        }
+        </code>
+    </p>
+
+    <h4>JavaScript Statments</h4>
+
+        <p>JavaScript statements often start with a <b>keyword</b> to identify the JavaScript action 
+        to be performed.Here is a list of the keywords you will learn about in this tutorial.</p>
+
+        <table style="width:100%">
+            <tr>
+                <th>Keyword</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>break</td>
+                <td>Terminates a switch or a loop</td>
+            </tr>
+            <tr>
+                <td>continue</td>
+                <td>Jumps out of a loop and starts at the top</td>
+            </tr>
+            <tr>
+                <td>debugger</td>
+                <td>Stops the execution of JavaScript, and calls (if available) the 
+                    debugging function
+                </td>
+            </tr>
+            <tr>
+                <td>do ... while</td>
+                <td>Executes a block of statements to be executed, and repeats the block, while a 
+                    condition is true
+                </td>
+            </tr>
+            <tr>
+                <td>for</td>
+                <td>Marks a block of statements to be executed, as long as a condition
+                    is true
+                </td>
+            </tr>
+            <tr>
+                <td>function</td>
+                <td>Declares a function</td>
+            </tr>
+            <tr>
+                <td>if ... else</td>
+                <td>Marks a block of statements to be executed depending on a condition</td>
+            </tr>
+            <tr>
+                <td>return</td>
+                <td>Exits a function</td>
+            </tr>
+            <tr>
+                <td>switch</td>
+                <td>Marks a block of statements to be executed, depending on different cases</td>
+            </tr>
+            <tr>
+                <td>try ... catch</td>
+                <td>Implements error handling to a block of statements</td>
+            </tr>
+            <tr>
+                <td>var</td>
+                <td>declares a variable</td>
+            </tr>
+
+        </table>
+
+
+
+</body>
+</html>
