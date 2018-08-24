@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Objects</title>
+</head>
+<body>
+<h2>JavaScript Objects</h2>
+
+    <p>You can create a variable that stores more then one value. This is called an object. Here is an example below</p>
+
+    <p><code>var car= {type:"Chevrolet", model:"Chevelle", color:"blue" year:"1970" engine:"ls6"};</code></p>
+
+    <p>The name value pairs created above are called properties. You access properties in one of 2 ways</p>
+
+    <p><code>object.Name.propertyName (car.type)</code></p>
+
+    <p><code>objectName["propertyName"] (car["type"];)</code></p>
+
+<h2>Object Methods</h2>
+
+    <p>An Object method is a function stored as a property.</p>
+
+    <p><code><pre>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id : 5566,
+            fullName : function() {
+                return this.firstName + "" + this.lastName;
+            }
+        }
+    </pre></code></p>
+<h3>Then this Keyword</h3>
+    <p>In a function definition, this refers to the "owner" of the function. In the example above, this is the person object that "owns" 
+       the fullName function. In other words. this.firstName means the firstName property of <b>this object.</b></p>
+
+<h2>Accessing Object Methods</h2>       
+
+    <p>You can access an object method with the following syntax:
+    </p>
+
+    <p><code>objectName.methodName()</code></p>
+
+    <p><code>name = person.fullName;</code></p>
+
+<h2>Do Not Declare Strings, Numbers, and Booleans as Objects!</h2>
+
+    <p>When a JavaScript variable is declared with the keyword "new", the variable is created as an object. Avoid string, 
+        number, and Boolean objects. They complicate yout code and slow down execution speed.</p>
+
+    <p><code>var x = new String();</code></p>
+
+        
+</body>
+<html>
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Functions</title>
+</head>    
+<body>
+
+<h2>JavaScript Functions</h2>
+
+    <p>JavaScript function is a block of code designed to perform a particular task, and is invoked when something
+    calls it. The example below returns a paragraph that simply says 12, the product of 4 * 3. This particular 
+    function was involded by the getElementById script.
+    </p>
+
+    <p><pre><code>
+        &#60;!DOCTYPE HTML&#62;
+        &#60;head&#62;
+        &#60;script&#62;
+        function ,myFunction() {
+            document.getElementById("ex.1").innerHTML = 5+6;
+        }
+        &#60;/script&#62;
+        &#60;/head&#62;
+        &#60;body&#62;
+
+        &#60;p id="ex.1"&#62;&#60;/p&#62;
+
+        &#60;script&#62;
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        
+        document.getElementById("ex.1").innerHTML = myFunction(4, 3);
+        &#60;/script&#62;
+        &#60;/body&#62;
+        &#60;/html&#62;</code></pre>
+    </p>
+
+    <p>Lets break down the parts of the function above.It begins with the <b>function</b> keyword, followed by 
+        the <b>name</b> (function names may be letters, digits, underscores, and $ signs). The function above is called my function. 
+
+    </p>
+
+    <p>Next comes the parimiters, that are set inside the parentheses (). This function's parameters are p1 and p2. The arguments and values
+    of p1 and p2 come when the function is invoked (p1 and p2 are defines as 4 and 3, and they are multiplied together.)
+    </p>
+
+<h2>Why Functions</h2>
+
+    <p>Functions allow you to reuse code (define the code once and use it many times). You can also use the same code 
+        with different arguments to produce different results. For example, the function below is used multiple times to return
+      convert different temperatures to Celcius from Fahrenheit.
+    </p>
+
+    <p><pre><code>
+        &#60;!DOCTYPE HTML&#62;
+        &#60;head&#62;
+        
+        &#60;/head&#62;
+        &#60;body&#62;
+
+        &#60;p id="ex.1"&#62;&#60;/p&#62;
+
+        &#60;script&#62;
+        function toCelcuis(f) {
+            return (5/9) * (f-32);
+        }
+
+        document.getElementById("ex.1").innerHTML = toCelcuis(77);
+        &#60;/script&#62;
+        &#60;/body&#62;
+        &#60;/html&#62;
+      </code></pre>
+
+                
+       
+    </p>
+
+<h2>Functions Used as Variable Values</h2>
+    <p>Functions can also be used the same way as a variable.</p>
+
+    <p><code>var x = toCelsius(77);</code></p>
+    <p><code>var text = "The temperature is " + x + " Celsius";</code></p>
+    <p><code>var text = "The temperature is " + toCelsius(77) + "Celsius";</code></p>
+
+<h2>Local Variables<h2>
+
+    <p>Variable declared within a JavaScript function become <b>LOCAL</b> to he function. Local variables can only be accessed from
+        the function. Becasue they can only be accessed from within a function, variables with the same name can be used within 
+        different functions.
+    </p>
+
+</body>
+</html>

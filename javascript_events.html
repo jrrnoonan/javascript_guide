@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events</title>
+</head>
+<body>
+<h2>JavaScript Events</h2>
+
+    <p>HTML events are "things" that happen in HTML elements. JavaScript can coded to react to these events</p>
+
+    <p>HTML events can something done by either the browser or the user. For example,
+        <ul>
+            <li>A HTML page finished loading</li>
+            <li>A HTML input field was changed</li>
+            <li>A HTML button was clicked</li>
+        </ul>
+    </p>
+
+    <p>The simplifed way of writing "event code" is described below. You canuse single or double quotes</p>
+
+    <p><code>&#60;element event='some JavaScript'&#62;</code></p>
+
+    <p><code>&#60;element event="some JavaScript"&#62;</code></p>
+
+    <p id ="button">Click the button below to iniate the JavaScript event that changes this text!! Example of text below.</p>
+
+    <button onclick="document.getElementById('button').innerHTML = 'You Clicked The Button'">Click me</button>
+
+    <p><code>&#60;button onclick="document.getElementById('button').innerHTML = 'You Clicked The Button'"&#62;</code></p>
+
+    <p>Notice 'button' after getElementById. The paragraph changed by clicking the button has its id set to button.</p>
+
+    <p>JavaScript events can also call on functions. Clicking the button below will display the date using functions. Once 
+        again a demonstrate of the code is provided below
+    </p>
+
+    <button onclick="displayDate()">The time is?</button>
+
+    <script>
+    function displayDate() {
+        document.getElementById("date").innerHTML = Date();
+    }
+    </script>
+
+    <p id="date"></p>
+
+    <p><code>&#60;button onclick="displayDate()"&#62;The time is?&#60;/button&#62;</code></p>
+
+    <pre><code>
+        &#60;script&#62;
+        function displayDate() {
+            document.getElementById('date').innerHTML = Date();
+        }
+        &#60;/script&#62;
+
+        &#60;p id ="date"&#62;&#60;/p&#62;
+    </code></pre>
+
+    <table style= "width:100%">
+        <tr style= "text-align:left">
+            <th>Event</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>onchange</td>
+            <td>A HTML element has been changed</td>
+        </tr>
+        <tr>
+                <td>onclick</td>
+                <td>The user clicks a HTML element</td>
+        </tr>
+        <tr>
+                <td>onmouseover</td>
+                <td>The user moves the mouse over a HTML element</td>
+        </tr>
+        <tr>
+                <td>onmouseout</td>
+                <td>The user moves the mouse away from a HTML element</td>
+        </tr>
+        <tr>
+                <td>onkeydown</td>
+                <td>The user pushed a key down</td>
+        </tr>
+        <tr>
+                <td>onload</td>
+                <td>The browser has finished loading the page</td>
+        </tr>
+    </table>
+
+<h2>What are JavaScript Events useful for</h2>    
+
+    <p>JavaScript event handlers are useful to handle and verify user input, actions, and browser actions: </p>
+
+        <ul>
+            <li>Things that should be done everytime a page loads</li>
+            <li>Things that should be done when the page is closed</li>
+            <li>Content that should be verified when a user inputs data</li>
+            <li>More</li>
+        </ul>
+    <p>Many different methods can be employed to let JavaScript work with events:</p>    
+        <ul>
+            <li>HTML event attributes can execute JavaScript code directly</li>
+            <li>HTML event attributes can call JavaScript functions</li>
+            <li>You can assign your own event handler functions to HTML elements</li>
+            <li>You can prevent events from being sent or handled</li>
+            <li>Much more</li>
+        </ul>
+
+</body>
+</html>
